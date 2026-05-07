@@ -18,10 +18,19 @@ import { MusicPlayer } from "../apps/MusicPlayer";
 import { SystemInfo } from "../apps/SystemInfo";
 
 const APPS: Record<string, any> = {
-  notepad: Notepad, paint: Paint, explorer: FileExplorer, ie: InternetExplorer,
-  messenger: Messenger, controlpanel: ControlPanel, wordpad: WordPad,
-  gallery: Gallery, terminal: Terminal, recyclebin: RecycleBin,
-  minesweeper: Minesweeper, music: MusicPlayer, systeminfo: SystemInfo,
+  notepad: Notepad,
+  paint: Paint,
+  explorer: FileExplorer,
+  ie: InternetExplorer,
+  messenger: Messenger,
+  controlpanel: ControlPanel,
+  wordpad: WordPad,
+  gallery: Gallery,
+  terminal: Terminal,
+  recyclebin: RecycleBin,
+  minesweeper: Minesweeper,
+  music: MusicPlayer,
+  systeminfo: SystemInfo,
   project: ProjectWindow,
 };
 
@@ -39,7 +48,7 @@ export function OS() {
       <div className="fixed inset-0 overflow-hidden">
         <Desktop />
         <div className="absolute inset-0 pointer-events-none">
-          <div className="relative w-full h-[calc(100%-30px)] pointer-events-auto">
+          <div className="relative w-full h-[calc(100%-30px)]">
             {windows.map((w) => {
               const C = APPS[w.app];
               return C ? <C key={w.id} win={w} /> : null;

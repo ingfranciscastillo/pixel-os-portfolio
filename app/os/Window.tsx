@@ -34,7 +34,7 @@ export function Win({ win, children, icon, menubar, statusbar }: Props) {
         resize(win.id, pos.x, pos.y, ref.offsetWidth, ref.offsetHeight)
       }
       onMouseDown={() => !active && focus(win.id)}
-      className="absolute"
+      className="absolute pointer-events-auto"
     >
       <div className="w95-raised bg-w95-bg w-full h-full flex flex-col p-[3px]">
         <div
