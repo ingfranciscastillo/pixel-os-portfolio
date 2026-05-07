@@ -1,15 +1,293 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@font-face {
+  font-family: "W95FA";
+
+  src:
+    url("https://cdn.jsdelivr.net/gh/notwhickey/W95FA@main/w95fa.woff2")
+      format("woff2");
+
+  font-display: swap;
+}
+
+:root {
+  /* Win95 palette */
+
+  --w95-bg: 192 8% 75%;
+  --w95-bg-dark: 0 0% 50%;
+  --w95-bg-darker: 0 0% 25%;
+  --w95-bg-light: 0 0% 100%;
+
+  --w95-text: 0 0% 0%;
+
+  --w95-title: 240 100% 27%;
+  --w95-title-fg: 0 0% 100%;
+  --w95-title-inactive: 0 0% 50%;
+
+  --w95-desktop: 180 100% 25%;
+
+  --w95-blue: 240 100% 50%;
+  --w95-red: 0 100% 50%;
+
+  /* shadcn */
+
+  --background: var(--w95-bg);
+  --foreground: var(--w95-text);
+
+  --card: var(--w95-bg);
+  --card-foreground: var(--w95-text);
+
+  --popover: var(--w95-bg);
+  --popover-foreground: var(--w95-text);
+
+  --primary: var(--w95-title);
+  --primary-foreground: var(--w95-title-fg);
+
+  --secondary: var(--w95-bg);
+  --secondary-foreground: var(--w95-text);
+
+  --muted: var(--w95-bg);
+  --muted-foreground: 0 0% 30%;
+
+  --accent: 240 100% 80%;
+  --accent-foreground: var(--w95-text);
+
+  --destructive: 0 100% 40%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 0 0% 50%;
+  --input: 0 0% 100%;
+  --ring: 240 100% 50%;
+
+  --radius: 0px;
+}
+
+@theme inline {
+  /* colors */
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  /* Win95 custom */
+
+  --color-w95-bg: hsl(var(--w95-bg));
+  --color-w95-dark: hsl(var(--w95-bg-dark));
+  --color-w95-darker: hsl(var(--w95-bg-darker));
+  --color-w95-light: hsl(var(--w95-bg-light));
+
+  --color-w95-text: hsl(var(--w95-text));
+
+  --color-w95-title: hsl(var(--w95-title));
+  --color-w95-desktop: hsl(var(--w95-desktop));
+
+  --color-w95-blue: hsl(var(--w95-blue));
+  --color-w95-red: hsl(var(--w95-red));
+
+  /* radius */
+
+  --radius-lg: 0px;
+  --radius-md: 0px;
+  --radius-sm: 0px;
+
+  /* fonts */
+
+  --font-pixel:
+    "W95FA",
+    "MS Sans Serif",
+    Tahoma,
+    sans-serif;
+}
+
+/* =========================
+   BASE
+========================= */
+
+* {
+  border-color: hsl(var(--border));
 }
 
 html,
-body {
-  @apply bg-white dark:bg-gray-950;
+body,
+#root {
+  height: 100%;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+
+  font-family:
+    "W95FA",
+    "MS Sans Serif",
+    Tahoma,
+    system-ui,
+    sans-serif;
+
+  font-size: 14px;
+
+  -webkit-font-smoothing: none;
+
+  image-rendering: pixelated;
+
+  user-select: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* =========================
+   COMPONENTS
+========================= */
+
+.w95-raised {
+  box-shadow:
+    inset 1px 1px 0 0 hsl(var(--w95-bg-light)),
+    inset -1px -1px 0 0 hsl(var(--w95-bg-darker)),
+    inset 2px 2px 0 0 hsl(var(--w95-bg)),
+    inset -2px -2px 0 0 hsl(var(--w95-bg-dark));
+}
+
+.w95-sunken {
+  box-shadow:
+    inset 1px 1px 0 0 hsl(var(--w95-bg-darker)),
+    inset -1px -1px 0 0 hsl(var(--w95-bg-light)),
+    inset 2px 2px 0 0 hsl(var(--w95-bg-dark)),
+    inset -2px -2px 0 0 hsl(var(--w95-bg));
+}
+
+.w95-input {
+  background: white;
+
+  box-shadow:
+    inset 1px 1px 0 0 hsl(var(--w95-bg-darker)),
+    inset -1px -1px 0 0 hsl(var(--w95-bg-light)),
+    inset 2px 2px 0 0 hsl(var(--w95-bg-dark)),
+    inset -2px -2px 0 0 white;
+}
+
+.w95-btn {
+  background: hsl(var(--w95-bg));
+
+  color: hsl(var(--w95-text));
+
+  min-width: 60px;
+
+  padding: 2px 10px;
+
+  box-shadow:
+    inset 1px 1px 0 0 hsl(var(--w95-bg-light)),
+    inset -1px -1px 0 0 hsl(var(--w95-bg-darker)),
+    inset 2px 2px 0 0 hsl(var(--w95-bg)),
+    inset -2px -2px 0 0 hsl(var(--w95-bg-dark));
+}
+
+.w95-btn:active,
+.w95-btn[data-pressed="true"] {
+  padding: 3px 9px 1px 11px;
+
+  box-shadow:
+    inset 1px 1px 0 0 hsl(var(--w95-bg-darker)),
+    inset -1px -1px 0 0 hsl(var(--w95-bg-light)),
+    inset 2px 2px 0 0 hsl(var(--w95-bg-dark)),
+    inset -2px -2px 0 0 hsl(var(--w95-bg));
+}
+
+.w95-btn:focus-visible {
+  outline: 1px dotted black;
+
+  outline-offset: -4px;
+}
+
+.w95-titlebar {
+  background:
+    linear-gradient(
+      90deg,
+      hsl(var(--w95-title)) 0%,
+      hsl(220 100% 45%) 100%
+    );
+
+  color: hsl(var(--w95-title-fg));
+}
+
+.w95-titlebar-inactive {
+  background: hsl(var(--w95-title-inactive));
+
+  color: hsl(0 0% 85%);
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+.w95-scrollbar::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+.w95-scrollbar::-webkit-scrollbar-track {
+  background:
+    repeating-conic-gradient(
+      hsl(var(--w95-bg)) 0% 25%,
+      hsl(0 0% 85%) 0% 50%
+    )
+    50% / 2px 2px;
+}
+
+.w95-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--w95-bg));
+
+  box-shadow:
+    inset 1px 1px 0 0 hsl(var(--w95-bg-light)),
+    inset -1px -1px 0 0 hsl(var(--w95-bg-darker)),
+    inset 2px 2px 0 0 hsl(var(--w95-bg)),
+    inset -2px -2px 0 0 hsl(var(--w95-bg-dark));
+}
+
+/* =========================
+   CURSOR
+========================= */
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
   }
+
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink::after {
+  content: "_";
+
+  animation: blink 1s steps(1) infinite;
 }
