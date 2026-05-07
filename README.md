@@ -1,87 +1,63 @@
-# Welcome to React Router!
+# Portfolio95
 
-A modern, production-ready template for building full-stack React applications using React Router.
+[![live_preview](https://img.shields.io/badge/live_preview-000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio95-silk.vercel.app/)
+[![behance](https://img.shields.io/badge/behance-1769FF?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/ingfranciscastillo)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+> Un portfolio interactivo inspirado en el escritorio clásico de Windows 95
+
+![Portfolio95 Preview](/screenshot.png)
+
+## Sobre el Proyecto
+
+Portfolio95 es un portfolio interactivo que recrea la experiencia del icónico escritorio de Windows 95 en la web. Presento mis proyectos, skills y experiencia a través de ventanas arrastrables, menús contextuales auténticos y una experiencia retro operativa.
+
+## Windows 95: Un Icono de la Computación
+
+Lanzado el 24 de agosto de 1995, Windows 95 representó una revolución en la computación personal. Por primera vez, millones de usuarios pudieron experimentar una interfaz gráfica intuitiva con el icónico botón Start, la barra de tareas y ventanas que podían arrastrarse libremente por la pantalla.
+
+Más que un sistema operativo, Windows 95 definió toda una era: los sonidos de inicio, los degradés azulados, los botones 3D con efecto relieve (bevel), y esa sensación única de "mi PC" siguen siendo icónicos para toda una generación de desarrolladores que creció frente a monitores CRT. El diseño skeumórfico de Microsoft en los 90 estableció convenciones de UI que aún hoy influyen en cómo esperamos que funcione una interfaz.
+
+## Arquitectura
+
+- **React Router 7** para rutas y navegación
+- **Zustand** para estado global (ventanas, apps, escritorio)
+- **React RND** para ventanas arrastrables y redimensionables
+
+## Stack Técnico
+
+- React 19
+- React Router 7
+- React RND
+- Zustand
+- Tailwind CSS v4
+- TypeScript
+- Vite
+
+## Estructura
+
+```
+app/
+├── apps/          # Apps simuladas (Notepad, Paint, Minesweeper...)
+├── os/            # Componentes del SO (Desktop, Window, Taskbar, BootScreen)
+├── mobile/        # Shell móvil
+├── assets/        # Iconos e imágenes
+├── content/       # Datos (resume.json)
+└── routes/        # Rutas de la app
+```
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Ventanas arrastrables y redimensionables
+- Menú Start con lista de apps
+- Menú contextual en escritorio e iconos
+- Múltiples apps funcionales
+- Diseño responsive (escritorio + móvil)
+- Sonidos clásicos de Windows 95
 
-## Getting Started
+## Licencia
 
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+MIT © Francis Castillo
 
 ---
 
-Built with ❤️ using React Router.
+Gracias por ver el proyecto 💙
