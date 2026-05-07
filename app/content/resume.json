@@ -1,115 +1,341 @@
 {
   "basics": {
-    "name": "Alex Doe",
-    "label": "Full-Stack Designer & Developer",
+    "name": "Francis Castillo",
+    "label": "Frontend Developer & Product Builder",
     "image": "",
-    "email": "hello@alex.dev",
-    "phone": "+1 (555) 123-4567",
-    "url": "https://alex.dev",
-    "summary": "I'm a multidisciplinary designer and developer building thoughtful digital products. I care about craft, accessibility, and the small details that make software feel alive.\n\nWhat I bring: strategic thinking, attention to detail, empathy, leadership, and commitment. I love working collaboratively, listening, proposing, and building solutions that create value for both people and the project.",
-    "location": { "city": "Remote", "countryCode": "EARTH", "region": "Internet" },
+    "email": "franciscastillodev@proton.me",
+    "phone": "+1 809 496 1957",
+    "url": "https://franciscode.dev",
+    "summary": "Frontend engineer enfocado en producto, especializado en convertir ideas en aplicaciones reales de forma rápida. Combino diseño, desarrollo e IA para crear experiencias simples, útiles y listas para crecer.\n\nCreo experiencias web de alto rendimiento con un enfoque en usabilidad, accesibilidad y detalle visual. Disfruto construir productos completos: desde la arquitectura backend hasta el último píxel del frontend.",
+    "location": {
+      "city": "La Romana",
+      "countryCode": "DO",
+      "region": "República Dominicana"
+    },
     "profiles": [
-      { "network": "GitHub", "username": "alexdoe", "url": "https://github.com/alexdoe" },
-      { "network": "LinkedIn", "username": "alexdoe", "url": "https://linkedin.com/in/alexdoe" },
-      { "network": "Twitter", "username": "alexdoe", "url": "https://twitter.com/alexdoe" }
+      {
+        "network": "GitHub",
+        "username": "ingfranciscastillo",
+        "url": "https://github.com/ingfranciscastillo"
+      },
+      {
+        "network": "Twitter",
+        "username": "ingfranciscas",
+        "url": "https://x.com/ingfranciscas"
+      },
+      {
+        "network": "Behance",
+        "username": "ingfranciscastillo",
+        "url": "https://www.behance.net/ingfranciscastillo"
+      },
+      {
+        "network": "Instagram",
+        "username": "ingfranciscastillo",
+        "url": "https://www.instagram.com/ingfranciscastillo"
+      }
     ]
   },
+
   "work": [
     {
-      "name": "Acme Studio",
-      "position": "Senior Product Designer",
-      "url": "https://acme.example",
+      "name": "100ESignature",
+      "position": "Frontend Developer",
+      "url": "",
       "startDate": "2023-01-01",
-      "endDate": "",
-      "summary": "Leading design for B2B SaaS platforms.",
-      "highlights": ["Shipped design system used by 30+ engineers", "Cut onboarding time 42%"]
+      "endDate": "2025-01-01",
+      "summary": "Desarrollo interfaces para una plataforma de firmas digitales, enfocándome en rendimiento, usabilidad y claridad en flujos críticos.",
+      "highlights": [
+        "Implementé interfaces en React y TypeScript para flujos de firma y gestión documental",
+        "Mejoré la experiencia de usuario reduciendo fricción en procesos críticos",
+        "Integré APIs para estados de firma y manejo de documentos en tiempo real",
+        "Colaboré con diseño y backend para mantener consistencia y calidad de producto"
+      ]
     },
     {
-      "name": "Pixel Forge",
-      "position": "Frontend Engineer",
+      "name": "Bufete Jurídico Castillo Melo & Asoc.",
+      "position": "Web Developer & Technical Support",
       "url": "",
-      "startDate": "2020-06-01",
-      "endDate": "2022-12-31",
-      "summary": "Built marketing sites and dashboards for early-stage startups.",
-      "highlights": ["12+ production launches", "Mentored 4 junior devs"]
+      "startDate": "2015-09-01",
+      "endDate": "2026-02-01",
+      "summary": "Encargado del desarrollo y mantenimiento del sitio web institucional, así como de la gestión tecnológica interna del bufete.",
+      "highlights": [
+        "Desarrollé y mantuve el sitio web corporativo",
+        "Gestioné correos, dominios y servicios digitales",
+        "Brindé soporte técnico en sistemas y equipos internos",
+        "Optimicé procesos digitales para organización y acceso a información"
+      ]
+    },
+    {
+      "name": "Evolution Solar System LLC",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2022-01-01",
+      "endDate": "2023-01-01",
+      "summary": "Desarrollo del sitio web corporativo para empresa de energía solar orientado a conversión y captación de clientes.",
+      "highlights": [
+        "Diseñé y desarrollé el sitio web completo",
+        "Implementé landing sections enfocadas en conversión",
+        "Optimicé rendimiento y experiencia móvil",
+        "Configuré formularios y flujos de contacto"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Designer & Developer",
+      "url": "",
+      "startDate": "2020-01-01",
+      "endDate": "",
+      "summary": "Desarrollo sitios y aplicaciones web para clientes independientes, enfocado en soluciones rápidas, modernas y orientadas a producto.",
+      "highlights": [
+        "Diseño y desarrollo de experiencias web completas",
+        "Creación de interfaces modernas y accesibles",
+        "Construcción de MVPs y herramientas internas",
+        "Implementación de arquitecturas frontend escalables"
+      ]
     }
   ],
+
   "education": [
     {
-      "institution": "State University",
-      "area": "Graphic Design — UX/UI",
+      "institution": "Universidad Dominicana O&M",
+      "area": "Ingeniería en Sistemas Computacionales",
       "studyType": "Bachelor",
-      "startDate": "2016-09-01",
-      "endDate": "2020-06-01"
+      "startDate": "2015-09-01",
+      "endDate": "2021-10-01"
     }
   ],
+
   "skills": [
-    { "name": "Frontend", "level": "Expert", "keywords": [
-      { "name": "React", "level": 95 },
-      { "name": "TypeScript", "level": 92 },
-      { "name": "Tailwind CSS", "level": 90 },
-      { "name": "Framer Motion", "level": 80 }
-    ]},
-    { "name": "Backend", "level": "Advanced", "keywords": [
-      { "name": "Node.js", "level": 85 },
-      { "name": "PostgreSQL", "level": 78 },
-      { "name": "Supabase", "level": 82 },
-      { "name": "REST / GraphQL", "level": 75 }
-    ]},
-    { "name": "Design", "level": "Expert", "keywords": [
-      { "name": "Figma", "level": 95 },
-      { "name": "Design Systems", "level": 90 },
-      { "name": "Prototyping", "level": 88 },
-      { "name": "Illustration", "level": 70 }
-    ]},
-    { "name": "Tools", "level": "Advanced", "keywords": [
-      { "name": "Git", "level": 92 },
-      { "name": "Vite", "level": 88 },
-      { "name": "Vitest", "level": 75 },
-      { "name": "Linux", "level": 70 }
-    ]}
+    {
+      "name": "Frontend",
+      "level": "Expert",
+      "keywords": [
+        {
+          "name": "React",
+          "level": 95
+        },
+        {
+          "name": "TypeScript",
+          "level": 92
+        },
+        {
+          "name": "Next.js",
+          "level": 90
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 92
+        },
+        {
+          "name": "Framer Motion",
+          "level": 82
+        },
+        {
+          "name": "Astro",
+          "level": 84
+        }
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Advanced",
+      "keywords": [
+        {
+          "name": "Express.js",
+          "level": 80
+        },
+        {
+          "name": "NestJS",
+          "level": 74
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 82
+        },
+        {
+          "name": "MongoDB",
+          "level": 76
+        },
+        {
+          "name": "tRPC",
+          "level": 85
+        },
+        {
+          "name": "Golang",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "name": "Design",
+      "level": "Expert",
+      "keywords": [
+        {
+          "name": "Figma",
+          "level": 94
+        },
+        {
+          "name": "Photoshop",
+          "level": 86
+        },
+        {
+          "name": "UX Research",
+          "level": 80
+        },
+        {
+          "name": "Accessibility",
+          "level": 82
+        },
+        {
+          "name": "Design Systems",
+          "level": 88
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "Advanced",
+      "keywords": [
+        {
+          "name": "Git",
+          "level": 92
+        },
+        {
+          "name": "Docker",
+          "level": 72
+        },
+        {
+          "name": "Vitest",
+          "level": 74
+        },
+        {
+          "name": "Vite",
+          "level": 90
+        },
+        {
+          "name": "Zod",
+          "level": 86
+        }
+      ]
+    }
   ],
+
   "projects": [
     {
-      "name": "Lumen Dashboard",
-      "description": "Analytics dashboard with realtime charts and a custom design system.",
+      "name": "ResumeSense",
+      "description": "Plataforma de optimización de CVs impulsada por IA que analiza compatibilidad con vacantes y genera sugerencias detalladas.",
       "year": "2026",
-      "tech": ["React", "TypeScript", "D3", "Supabase"],
-      "live": "https://example.com",
-      "repo": "https://github.com/example",
+      "tech": [
+        "React",
+        "React Router",
+        "Puter.js",
+        "Tailwind CSS",
+        "PDFLib"
+      ],
+      "live": "https://resumesense.vercel.app/",
+      "repo": "https://github.com/ingfranciscastillo/ai-resume-analyzer",
       "image": ""
     },
     {
-      "name": "Kettle Notes",
-      "description": "Markdown-first notes app with end-to-end encryption.",
-      "year": "2025",
-      "tech": ["React", "Rust (WASM)", "IndexedDB"],
-      "live": "https://example.com",
-      "repo": "https://github.com/example",
+      "name": "Nephrite: The Emerald Standard",
+      "description": "Un ecosistema visual diseñado para transformar el navegador y editor en un entorno de calma y productividad.",
+      "year": "2026",
+      "tech": [
+        "Astro",
+        "UI Design",
+        "Product Design"
+      ],
+      "live": "https://getnephrite.dev/",
+      "repo": "https://github.com/Nephrite-theme/website",
       "image": ""
     },
     {
-      "name": "Pocket Atlas",
-      "description": "Offline-first travel guide for slow travellers.",
-      "year": "2025",
-      "tech": ["Next.js", "MapLibre", "PostGIS"],
-      "live": "https://example.com",
-      "repo": "https://github.com/example",
+      "name": "Talegrid",
+      "description": "Plataforma para creación y lectura de historias interactivas con arquitectura moderna y experiencia inmersiva.",
+      "year": "2026",
+      "tech": [
+        "Next.js",
+        "tRPC",
+        "Better Auth",
+        "Cloudflare",
+        "PostgreSQL"
+      ],
+      "live": "https://www.talegrid.app/",
+      "repo": "",
       "image": ""
     },
     {
-      "name": "Tinyforge",
-      "description": "A toy compiler for a Lisp-flavoured language.",
-      "year": "Experiments",
-      "tech": ["TypeScript", "Parser combinators"],
+      "name": "Portfolio Code Workspace",
+      "description": "Portafolio interactivo con interfaz inspirada en IDEs y experiencia enfocada en desarrolladores.",
+      "year": "2026",
+      "tech": [
+        "TanStack Router",
+        "React",
+        "Vite"
+      ],
+      "live": "https://portfolio-code-workspace.vercel.app",
+      "repo": "https://github.com/ingfranciscastillo/portfolio-code-workspace",
+      "image": ""
+    },
+    {
+      "name": "Terminal Portfolio",
+      "description": "Portafolio interactivo que funciona como una terminal real con navegación basada en comandos.",
+      "year": "2026",
+      "tech": [
+        "React",
+        "React Router",
+        "Vite"
+      ],
+      "live": "https://termportfolio.netlify.app/",
+      "repo": "https://github.com/ingfranciscastillo/resume-terminal-json",
+      "image": ""
+    },
+    {
+      "name": "ELIZA Terminal",
+      "description": "Una implementación moderna del legendario chatbot ELIZA con una interfaz de terminal CRT inspirada en los años 80.",
+      "year": "2026",
+      "tech": [
+        "React 19",
+        "TanStack Start",
+        "TanStack Router",
+        "Tailwind CSS v4",
+        "TypeScript",
+        "Vitest"
+      ],
+      "live": "https://eliza-terminal.vercel.app/",
+      "repo": "https://github.com/ingfranciscastillo/eliza-terminal",
+      "image": ""
+    },
+    {
+      "name": "Portfolio95",
+      "description": "Un portfolio interactivo inspirado en el escritorio clásico de Windows 95 con ventanas arrastrables, apps simuladas y experiencia retro auténtica.",
+      "year": "2026",
+      "tech": [
+        "React Router",
+        "React RND",
+        "Zustand",
+        "Tailwind CSS",
+        "Vite",
+        "TypeScript"
+      ],
       "live": "",
-      "repo": "https://github.com/example",
+      "repo": "https://github.com/ingfranciscastillo/Portfolio95",
       "image": ""
     }
   ],
+
   "deletedIdeas": [
-    { "name": "AI toaster app", "note": "The world wasn't ready for sentient breakfast." },
-    { "name": "Skeuomorphic banking app", "note": "Felt cute. Got rejected by every bank." },
-    { "name": "Blockchain to-do list", "note": "Self-explanatory." }
+    {
+      "name": "AI lawyer assistant",
+      "note": "Too ambitious for version one."
+    },
+    {
+      "name": "Web3 social network",
+      "note": "I escaped before it was too late."
+    },
+    {
+      "name": "NFT portfolio generator",
+      "note": "Character development."
+    }
   ]
 }
