@@ -80,6 +80,7 @@ export function DesktopIcon({
         }
       }}
       onContextMenu={(e) => {
+        e.preventDefault();
         e.stopPropagation();
         onSelect();
         onContextMenu?.(e);
