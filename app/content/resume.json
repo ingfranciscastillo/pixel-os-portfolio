@@ -1,0 +1,115 @@
+{
+  "basics": {
+    "name": "Alex Doe",
+    "label": "Full-Stack Designer & Developer",
+    "image": "",
+    "email": "hello@alex.dev",
+    "phone": "+1 (555) 123-4567",
+    "url": "https://alex.dev",
+    "summary": "I'm a multidisciplinary designer and developer building thoughtful digital products. I care about craft, accessibility, and the small details that make software feel alive.\n\nWhat I bring: strategic thinking, attention to detail, empathy, leadership, and commitment. I love working collaboratively, listening, proposing, and building solutions that create value for both people and the project.",
+    "location": { "city": "Remote", "countryCode": "EARTH", "region": "Internet" },
+    "profiles": [
+      { "network": "GitHub", "username": "alexdoe", "url": "https://github.com/alexdoe" },
+      { "network": "LinkedIn", "username": "alexdoe", "url": "https://linkedin.com/in/alexdoe" },
+      { "network": "Twitter", "username": "alexdoe", "url": "https://twitter.com/alexdoe" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Acme Studio",
+      "position": "Senior Product Designer",
+      "url": "https://acme.example",
+      "startDate": "2023-01-01",
+      "endDate": "",
+      "summary": "Leading design for B2B SaaS platforms.",
+      "highlights": ["Shipped design system used by 30+ engineers", "Cut onboarding time 42%"]
+    },
+    {
+      "name": "Pixel Forge",
+      "position": "Frontend Engineer",
+      "url": "",
+      "startDate": "2020-06-01",
+      "endDate": "2022-12-31",
+      "summary": "Built marketing sites and dashboards for early-stage startups.",
+      "highlights": ["12+ production launches", "Mentored 4 junior devs"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "State University",
+      "area": "Graphic Design — UX/UI",
+      "studyType": "Bachelor",
+      "startDate": "2016-09-01",
+      "endDate": "2020-06-01"
+    }
+  ],
+  "skills": [
+    { "name": "Frontend", "level": "Expert", "keywords": [
+      { "name": "React", "level": 95 },
+      { "name": "TypeScript", "level": 92 },
+      { "name": "Tailwind CSS", "level": 90 },
+      { "name": "Framer Motion", "level": 80 }
+    ]},
+    { "name": "Backend", "level": "Advanced", "keywords": [
+      { "name": "Node.js", "level": 85 },
+      { "name": "PostgreSQL", "level": 78 },
+      { "name": "Supabase", "level": 82 },
+      { "name": "REST / GraphQL", "level": 75 }
+    ]},
+    { "name": "Design", "level": "Expert", "keywords": [
+      { "name": "Figma", "level": 95 },
+      { "name": "Design Systems", "level": 90 },
+      { "name": "Prototyping", "level": 88 },
+      { "name": "Illustration", "level": 70 }
+    ]},
+    { "name": "Tools", "level": "Advanced", "keywords": [
+      { "name": "Git", "level": 92 },
+      { "name": "Vite", "level": 88 },
+      { "name": "Vitest", "level": 75 },
+      { "name": "Linux", "level": 70 }
+    ]}
+  ],
+  "projects": [
+    {
+      "name": "Lumen Dashboard",
+      "description": "Analytics dashboard with realtime charts and a custom design system.",
+      "year": "2026",
+      "tech": ["React", "TypeScript", "D3", "Supabase"],
+      "live": "https://example.com",
+      "repo": "https://github.com/example",
+      "image": ""
+    },
+    {
+      "name": "Kettle Notes",
+      "description": "Markdown-first notes app with end-to-end encryption.",
+      "year": "2025",
+      "tech": ["React", "Rust (WASM)", "IndexedDB"],
+      "live": "https://example.com",
+      "repo": "https://github.com/example",
+      "image": ""
+    },
+    {
+      "name": "Pocket Atlas",
+      "description": "Offline-first travel guide for slow travellers.",
+      "year": "2025",
+      "tech": ["Next.js", "MapLibre", "PostGIS"],
+      "live": "https://example.com",
+      "repo": "https://github.com/example",
+      "image": ""
+    },
+    {
+      "name": "Tinyforge",
+      "description": "A toy compiler for a Lisp-flavoured language.",
+      "year": "Experiments",
+      "tech": ["TypeScript", "Parser combinators"],
+      "live": "",
+      "repo": "https://github.com/example",
+      "image": ""
+    }
+  ],
+  "deletedIdeas": [
+    { "name": "AI toaster app", "note": "The world wasn't ready for sentient breakfast." },
+    { "name": "Skeuomorphic banking app", "note": "Felt cute. Got rejected by every bank." },
+    { "name": "Blockchain to-do list", "note": "Self-explanatory." }
+  ]
+}
